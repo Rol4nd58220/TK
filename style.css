@@ -39,6 +39,26 @@ header {
     z-index: 100;
 }
 
+/* Style for the welcome message */
+.welcome-message {
+    position: absolute; /* This allows the message to be placed freely on top of the image */
+    top: 10%; /* Adjust this value to move the message vertically */
+    left: 50%; /* Centers the message horizontally */
+    transform: translateX(-50%); /* Offsets the element by its width to keep it perfectly centered */
+    color: #c25ea4;
+    padding: 20px;
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: bold;
+    border-radius: 10px; /* Optional, for rounded corners */
+    width: 80%; /* Optional, adjusts width */
+}
+
+.welcome-message h2 {
+    margin: 0;
+}
+
+
 .logo {
     font-size: 3rem;
     color: #c25ea4;
@@ -329,7 +349,6 @@ body.loaded .home {
 
 /* About Section Styles */
 .about {
-    z-index: 2;
     min-height: 100vh;
     padding: 5rem 9% 5rem;
     background-color: black;
@@ -438,6 +457,7 @@ body.loaded .home {
     min-height: 100vh;
     width: 100%;
     position: relative;
+    top: 20%;
 }
 
 /* Project Title */
